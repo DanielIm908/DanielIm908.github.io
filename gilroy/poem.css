@@ -1,0 +1,14 @@
+body{
+    background-color: #ece5bf;
+}
+.poem{
+    color: grey;
+    font-size: 30px;
+}
+h1{
+    font-size: 50px;
+}
+
+#Shakespeare:hover {
+    transform: scale(1.1);
+}
