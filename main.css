@@ -1,7 +1,9 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url(E:\daniel im\gilroy\Gilroy-Bold.ttf);
+    src: url(fonts/Gilroy-Bold.ttf);
+    font-weight: bold;
 }
-body{
+html{
     font-family: 'Gilroy', sans-serif;
+    background-image: linear-gradient(#8C8C8C, #A0A1A0, #B5B5B5, #C9CAC9, #DEDEDE, #F2F3F2 );
 }
