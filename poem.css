@@ -1,12 +1,17 @@
 body{
-    background-color: #ece5bf;
+    background-image: radial-gradient(#8C8C8C, #A0A1A0, #B5B5B5, #C9CAC9, #DEDEDE, #F2F3F2 );
 }
-.poem{
+.author{
     color: grey;
-    font-size: 30px;
+    font-size: 20px;
 }
 h1{
     font-size: 50px;
+}
+
+.poem{
+    font-size: 25px;
+
 }
 
 #Shakespeare:hover {
