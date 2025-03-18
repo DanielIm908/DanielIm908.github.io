@@ -9,6 +9,7 @@
     <title>Biographie</title>
     <style>
         html{
+        /*Scroll-behavior:smooth; à cause j'ai un menu de navigation sur cette page qui mène à des sections différents du biographie*/
         background-image: radial-gradient(#8C8C8C, #A0A1A0, #B5B5B5, #C9CAC9, #DEDEDE, #F2F3F2 );
         scroll-behavior: smooth;
         }
@@ -40,6 +41,7 @@
             font-weight: bold;
         }
 
+        /*Utilisation de flexbox pour bien aligné les éléments dans le boite div.*/
         .proposdemoi{
             height: min-content;
             width: 57%;
@@ -106,6 +108,7 @@
             font-weight: bold;
         }
 
+        /*Code css pour mon tableau de compétences.*/
         .compcode{
             display: flex;
             justify-content: space-evenly;
@@ -139,6 +142,7 @@
             background-color: #C9CAC9;
         }
 
+        /*Code css pour mon menu de navigation qui reste fixe sur la page. Source:https://www.w3schools.com/howto/howto_css_fixed_menu.asp#:~:text=To%20create%20a%20fixed%20top%20menu%2C%20use%20position%3Afixed%20and,the%20height%20of%20your%20menu.*/
         .menubio {
             position: fixed;
             right: 90px;
@@ -172,6 +176,7 @@
     </style>
 </head>
 <body>
+    <!--Code HTML pour mon menu de navigation qui reste fixe sur cet page qui mène au différent section de cet page. Source: https://www.w3schools.com/howto/howto_css_fixed_menu.asp#:~:text=To%20create%20a%20fixed%20top%20menu%2C%20use%20position%3Afixed%20and,the%20height%20of%20your%20menu.-->
     <div class="menubio">
         <a href="#proposdemoi">À Propos de Moi</a>
         <a href="#liensh2">Mes Liens Préférés</a>
@@ -201,6 +206,7 @@
 
     <br /><br /><br /><br />
 
+    <!--Balise id pour qu'il soit relié au menu de navigation.-->
     <div class="proposdemoi" id="proposdemoi">
         <img src="images/daniel.jpg" class="danielyoung">
         <p><b class="proposdemoititle">À Propos de Moi</b><br /><br /><b>Pseudo Nom:</b> @danielim908<br /><br /><b>Âge:</b> 17 ans avec un rêve<br /><br /><b>Niveau Solaire:</b> 11e<br /><br /><b>Sports:</b> Hockey, Badminton et Golf<br /><br /><b>Passe-temps</b> Jeux Vidéos, Écouté la musique et Investir</p>
