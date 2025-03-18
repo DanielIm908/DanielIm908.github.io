@@ -1,3 +1,4 @@
+/*Code pour le boutton d'arrière donnée par un camarade de classeé*/
 .back {
     position: fixed;
     top: 70px;
@@ -99,10 +100,10 @@ body{
 .sidebar {
     font-family: 'Raleway', sans-serif;
     position: fixed;
-    top: 250px; /* Adjusted to move the sidebar lower */
-    left: -100%; /* Hidden by default */
+    top: 250px; 
+    left: -100%; 
     width: 250px;
-    height: calc(100% - 50px); /* Adjust height to account for the new top position */
+    height: calc(100% - 50px); 
     background-color: var(--background);
     color: var(--foreground);
     transition: left var(--animation-timing);
@@ -113,7 +114,7 @@ body{
 }
 
 .menu:has(input:checked) ~ .sidebar {
-    left: 50px; /* Adjusted to move the sidebar to the right when open */
+    left: 50px; 
 }
 
 .sidebar a {
