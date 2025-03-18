@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body{
+          background-image: radial-gradient(#8C8C8C, #A0A1A0, #B5B5B5, #C9CAC9, #DEDEDE, #F2F3F2 );
+        }
+
+        .author{
+          color: grey;
+          font-size: 47px;
+          font-family: 'Birthstone', sans-serif;
+          text-align: center;
+        }
+
+        h1{
+          font-size: 75px;
+          font-family: 'Birthstone', sans-serif;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        hr{
+          width: 50%;
+          margin: 0 auto;
+          border: 1px solid grey;
+        }
+  
+        .poem1{
+          font-size: 30px;
+          font-family: 'Birthstone', sans-serif;
+          text-align: center;
+        }
+
+        .poet img{
+          width: 225px; 
+          height: 150px;
+          border-radius: 100px; 
+          border: 4px solid grey;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+        }
+
+        .sourcepoem{
+          font-family: 'Birthstone', sans-serif;
+          text-align: center;
+          font-size: 25px;
+        }
+    </style> 
+  </head>
+  <body>
+      <title>Mon Poème Préféré</title>
+      <div class="back" id="back">
+        <a href="index.html"><img id="BackIcon" src="https://www.svgrepo.com/download/305142/arrow-ios-back.svg" alt="Go Back" height="30px" width="30px"></a>
+      </div>
+
+      <!--Code HTML pour mon boutton menu qui mène à tous les pages. Source:https://www.youtube.com/watch?v=dAIVbLrAb_U&t=7s&ab_channel=WebDevSimplified-->
+      <label class="menu">
+        <input type="checkbox" />
+      </label>
+      <aside class="sidebar">
+        <nav>
+          <div><a href="index.html">Accueil</a></div><br /><br />
+          <div><a href="poem.html">Mon Poème Préféré</a></div><br /><br />
+          <div><a href="voyage.html">Mon Voyage Parfait</a></div><br /><br />
+          <div><a href="biographie.html">Biographie</a></div><br /><br />
+        </nav>
+      </aside>
+
+      <h1 class="titlepoem">Sonnet 18: Shall I compare thee to a summer’s day? </h1>
+      <hr>
+      <p class="author"> <i>Par William Shakespeare </i></p>
+      <p class="poem1">
+        Shall I compare thee to a summer’s day?<br />
+        Thou art more lovely and more temperate:<br />
+        Rough winds do shake the darling buds of May,<br />
+        And summer’s lease hath all too short a date<br />
+        Sometime too hot the eye of heaven shines<br />
+        And often is his gold complexion dimm'd;<br />
+        And every fair from fair sometime declines,<br />
+        By chance or nature’s changing course untrimm'd;<br />
+        But thy eternal summer shall not fade,<br />
+        Nor lose possession of that fair thou ow’st;<br />
+        Nor shall death brag thou wander’st in his shade,<br />
+        When in eternal lines to time thou grow’st:<br />
+          So long as men can breathe or eyes can see,<br />
+           So long lives this, and this gives life to thee.<br />
+      </p>
+      <br />
+      <br />
+      <div class="poet">
+        <img src="https://cdn-test.poetryfoundation.org/cdn-cgi/image/w=2292,h=1528,q=80/content/images/653f5eeafab7a9895af1eca68e97459c831812c6.jpeg">
+      </div>
+      <p class="sourcepoem">
+        <a href="https://www.poetryfoundation.org/poems/45087/sonnet-18-shall-i-compare-thee-to-a-summers-day">Source Originale</a>
+      </p>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> 
+    <style>
+      html{
+        background-image: radial-gradient(#8C8C8C, #A0A1A0, #B5B5B5, #C9CAC9, #DEDEDE, #F2F3F2 );
+      }
+
+      .titlevacation{
+        font-size: 50px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      hr{
+        width: 40%;
+        margin: 0 auto;
+        border: 1px solid grey;
+      }
+
+      h2{
+        font-size: 50px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .countrydes{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .description-monaco{
+        border: black 1px solid;
+        border-radius: 7px;
+        margin: auto;
+        padding: 2em;
+        font-style: italic;
+        font-size: 25px;
+        font-family: 'Syne', sans-serif;
+        text-align: left;
+      }
+
+      .flag{
+        width: 470px; 
+        height: 270px; 
+        object-fit: cover; 
+        border-radius: 7px;
+        margin-right: auto;
+      }
+
+      .sites-container{
+        font-family: 'Syne', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .food-container{
+        font-family: 'Syne', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .sites{
+        width: 50%;
+        border-collapse: collapse;
+      }
+      
+      .food{
+        width: 50%;
+        border-collapse: collapse;
+      }
+
+      th, td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th{
+        background-color: #8C8C8C;
+      }
+
+      tr{
+        background-color: #C9CAC9;
+      }
+
+      img{
+        width: 200px; 
+        height: 200px; 
+        object-fit: cover; 
+        border-radius: 7px;
+        transition: 0.5s ease;
+      }
+
+      img:hover{
+        transform: scale(1.07);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="back" id="back">
+      <a href="index.html"><img id="BackIcon" src="https://www.svgrepo.com/download/305142/arrow-ios-back.svg" alt="Go Back" height="30px" width="30px"></a>
+    </div>
+    <label class="menu">
+      <input type="checkbox" />
+    </label>
+    <aside class="sidebar">
+      <nav>
+        <div><a href="index.html">Accueil</a></div><br /><br />
+        <div><a href="poem.html">Mon Poème Préféré</a></div><br /><br />
+        <div><a href="voyage.html">Mon Voyage Parfait</a></div><br /><br />
+        <div><a href="biographie.html">Biographie</a></div><br /><br />
+      </nav>
+    </aside>
+    <title>Mon Voyage Parfait</title>
+    <div class="titlevacation">
+      <h1>Mon Voyage Parfait</h1>
+    </div>
+    <hr>
+    <div class="country">
+      <h2>Monaco</h2>
+    </div>
+
+    <div class="countrydes">
+      <p class="description-monaco">
+        Monaco est une destination prestigieuse sur la Côte  <br />d’Azur, connue pour son luxe, son climat ensoleillé et<br/> ses paysages entre mer et montagne. Entre ses hôtels  <br />luxieux, ses restaurants délicieux et ses événements <br/> prestigieux, Monaco offre une expérience unique <br />d'élégance. Cliquez sur les images ci-dessous pour savoir<br /> d'avantage sur les sites à visiter et les mets populaires.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Flag_of_Monaco.svg/800px-Flag_of_Monaco.svg.png" class="flag" alt="Monaco">
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+
+    <div class="sites-container">
+      <table class="sites">
+        <tr><th colspan="3"><h3>Les sites à visiter</h3></th></tr>
+        <tr>
+            <td><img src="palais princier.jfif" alt="Le Palais Princier"><br>Le Palais Princier</td>
+            <td><img src="oceanmusee.jfif" alt="Le Musée Océanographique"><br>Le Musée Océanographique</td>
+            <td><img src="casinomonte.jfif" alt="Le Casino de Monte-Carlo"><br>Le Casino de Monte-Carlo</td>
+        </tr>
+        <tr>
+            <td><img src="porthercule.jfif" alt="Port Hercule"><br>Port Hercule</td>
+            <td><img src="grandprix.jfif" alt="Monaco Grand Prix"><br>Monaco Grand Prix</td>
+            <td><img src="larvatto.jfif" alt="Larvatto Beach"><br>Plage Larvatto</td>
+        </tr>
+        <tr>
+            <td><img src="jardinjapon.jfif" alt="Jardin Japonais"><br>Jardin Japonais</td>
+            <td><img src="opera.jfif" alt="Opera de Monte-Carlo"><br>Opera de Monte-Carlo</td>
+            <td><img src="casionsquare.jfif" alt="Casino Square"><br>Casino Square</td>
+        </tr>
+      </table>
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+
+    <div class="food-container">
+      <table class="food">
+        <tr><th colspan="3"><h3>Les mets populaire</h3></th></tr>
+        <tr>
+            <td><img src="barbi.jfif" alt="Barbagiuan"><br>Barbagiuan</td>
+            <td><img src="stocafi.jfif" alt="Stocafi"><br>Stocafi</td>
+            <td><img src="pissaladiere.jfif" alt="Pissaladière"><br>Pissaladière</td>
+        </tr>      
+        <tr>
+            <td><img src="socca.jfif" alt="La Socca"><br>La Socca</td>
+            <td><img src="pan.jfif" alt="Le Pan Bagnat"><br>Le Pan Bagnat</td>
+            <td><img src="bouilla.jfif" alt="Bouillabaisse"><br>Bouillabaisse</td>
+        </tr>
+        <tr>
+            <td><img src="salad.jfif" alt="Salade Niçoise"><br>Salade Niçoise</td>
+            <td><img src="tarte.jfif" alt="Tarte Tropezienne"><br>Tarte Tropezienne</td>
+            <td><img src="pissalat.jfif" alt="La Pissalat"><br>La Pissalat</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

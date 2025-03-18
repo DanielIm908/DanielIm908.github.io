@@ -1,0 +1,254 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biographie</title>
+    <style>
+        html{
+        background-image: radial-gradient(#8C8C8C, #A0A1A0, #B5B5B5, #C9CAC9, #DEDEDE, #F2F3F2 );
+        scroll-behavior: smooth;
+        }
+
+        .biotitle{
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+        }
+
+        hr{
+            width: 22%;
+            margin: 0 auto;
+            border: 1px solid grey;
+        }
+
+        .danielyoung{
+            width: auto; 
+            height: auto;
+            border-radius: 10px; 
+            border: 3px solid #8C8C8C;
+            margin: auto;
+        }
+
+        .proposdemoititle{
+            font-size: 50px;
+            font-family: 'Syne', sans-serif;
+            font-weight: bold;
+        }
+
+        .proposdemoi{
+            height: min-content;
+            width: 57%;
+            border: black 1px solid;
+            border-radius: 7px;
+            margin: auto;
+            padding: 2em;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            font-family: 'Syne', sans-serif;
+            font-size: 25px;
+            text-align: left;
+            gap: 4em;
+        }
+
+        .liensfav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-family: 'Syne', sans-serif;
+            font-size: 25px;
+            text-align: center;
+            margin: auto;
+            width: 50%;
+            border: black 1px solid;
+            border-radius: 7px;
+            padding: 2em;
+
+        }
+
+        .liensh2{
+            margin: auto;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Syne', sans-serif;
+            font-weight: bold;
+        }
+
+        .lk{
+            height: 30px;
+            width: 200px;
+            border: black 1px solid;
+            border-radius: 7px;
+            padding: 1em;
+            margin: 1em;
+            transition: 0.5s ease;
+            background-color: #B5B5B5;
+        }
+
+        .lk:hover{
+            transform:scale(1.07)
+        }
+
+        .comph2{
+            margin: auto;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Syne', sans-serif;
+            font-weight: bold;
+        }
+
+        .compcode{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: 'Syne', sans-serif;
+            font-size: 25px;
+            text-align: center;
+            margin: auto;
+            width: 50%;
+        }
+
+        .codeskills{
+            height: 250px;
+            width: 80%;
+            border-collapse: collapse;
+            border: black 1px solid;
+            border-radius: 7px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th{
+            background-color: #8C8C8C;
+        }
+
+        tr{
+            background-color: #C9CAC9;
+        }
+
+        .menubio {
+            position: fixed;
+            right: 90px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 150px;
+            background-color: #8C8C8C;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        .menubio a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-family: 'Syne', sans-serif;
+            font-size: 14px;
+            text-align: center;
+            margin: 5px 0;
+            transition: 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .menubio a:hover {
+            background-color: #B5B5B5;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="menubio">
+        <a href="#proposdemoi">À Propos de Moi</a>
+        <a href="#liensh2">Mes Liens Préférés</a>
+        <a href="#comph2">Compétences de Codage</a>
+    </div>
+
+    <div class="back" id="back">
+        <a href="index.html"><img id="BackIcon" src="https://www.svgrepo.com/download/305142/arrow-ios-back.svg" alt="Go Back" height="30px" width="30px"></a>
+    </div>
+
+    <label class="menu">
+        <input type="checkbox" />
+      </label>
+      <aside class="sidebar">
+        <nav>
+          <div><a href="index.html">Accueil</a></div><br /><br />
+          <div><a href="poem.html">Mon Poème Préféré</a></div><br /><br />
+          <div><a href="voyage.html">Mon Voyage Parfait</a></div><br /><br />
+          <div><a href="biographie.html">Biographie</a></div><br /><br />
+        </nav>
+      </aside>
+
+    <div class="biotitle">
+        <h1>Biographie</h1>
+        <hr>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div class="proposdemoi" id="proposdemoi">
+        <img src="daniel.jpg" class="danielyoung">
+        <p><b class="proposdemoititle">À Propos de Moi</b><br /><br /><b>Pseudo Nom:</b> @danielim908<br /><br /><b>Âge:</b> 17 ans avec un rêve<br /><br /><b>Niveau Solaire:</b> 11e<br /><br /><b>Sports:</b> Hockey, Badminton et Golf<br /><br /><b>Passe-temps</b> Jeux Vidéos, Écouté la musique et Investir</p>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <h2 class="liensh2" id="liensh2">Mes Liens Préférés</h2>
+
+    <br />
+    
+    <!--Mes bouttons pour mes liens préférés, appris que target="_blank" fait que quand le lien est cliqué dessus, ça vas l'ouvrir dans une nouvelle onglet. Source:https://stackoverflow.com/questions/17711146/how-to-open-link-in-a-new-tab-in-html-->
+    <div class="liensfav">
+        <div class="lk"><a href="https://www.youtube.com/" target="_blank">Youtube</a></div>
+        <div class="lk"><a href="https://www.netflix.com/browse" target="_blank">Netflix</a></div>
+        <div class="lk"><a href="https://music.apple.com/ca/new" target="_blank">Apple Music</a></div>
+        <div class="lk"><a href="https://x.com/home" target="_blank">X (Twitter)</a></div>
+        <div class="lk"><a href="https://www.amazon.ca/" target="_blank">Amazon</a></div>
+        <div class="lk"><a href="https://monkeytype.com/" target="_blank">MonkeyType</a></div>
+        <div class="lk"><a href="https://chatgpt.com/" target="_blank">ChatGPT</a></div>
+        <div class="lk"><a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a></div>
+        <div class="lk"><a href="https://www.deepl.com/en/translator" target="_blank">DeepL</a></div>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <h2 class="comph2" id="comph2">Compétences de Codage</h2>
+
+    <br />
+    <div class="compcode">
+        <table class="codeskills">
+            <tr>
+                <th>Langage</th>
+                <th>Niveau</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Débutant</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Débutant</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Aucune Expérience</td>
+            </tr>
+    </div>
+
+</body>
+</html>

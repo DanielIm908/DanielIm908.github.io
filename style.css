@@ -1,0 +1,130 @@
+.back {
+    position: fixed;
+    top: 70px;
+    left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s;
+}
+
+.back:hover {
+    transform: scale(1.1);
+}
+
+.Image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.back img {
+    width: 60px;
+    height: 60px;
+}
+
+/*Pour qu'il y a de l'espace en bas de page. Source:https://stackoverflow.com/questions/10815188/adding-whitespace-at-bottom-of-html-page*/
+body{
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+/*code css pour mon boutton de menu. Source:https://www.youtube.com/watch?v=dAIVbLrAb_U&t=7s&ab_channel=WebDevSimplified*/
+:root{
+    --bar-width: 50px;
+    --bar-height: 6px;
+    --hamburger-gap:5px;
+    --foreground: black;
+    --background:; 
+    --menu-margin: 8px;
+    --animation-timing: 200ms ease-in-out;
+    --menu-height: calc(var(--bar-height) *3 + var(--hamburger-gap) *2);
+}
+
+.menu{
+    --x-width: calc(var(--menu-height) * 1.41421356237);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: fixed;
+    top: 200px; 
+    left: 80px; 
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+.menu::before,
+.menu::after,
+.menu input{
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing),background-color var(--animation-timing);
+}
+
+.menu input{
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+
+}
+
+.menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+
+}
+
+.menu input:checked {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar {
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    top: 250px; /* Adjusted to move the sidebar lower */
+    left: -100%; /* Hidden by default */
+    width: 250px;
+    height: calc(100% - 50px); /* Adjust height to account for the new top position */
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: left var(--animation-timing);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1;
+}
+
+.menu:has(input:checked) ~ .sidebar {
+    left: 50px; /* Adjusted to move the sidebar to the right when open */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--foreground);
+    margin: 10px 0;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.sidebar a:hover {
+    color: #555;
+}
+
