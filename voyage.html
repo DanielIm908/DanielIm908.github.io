@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Raleway:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet"> 
     <style>
       html{
         background-image: radial-gradient(#8C8C8C, #A0A1A0, #B5B5B5, #C9CAC9, #DEDEDE, #F2F3F2 );
@@ -32,28 +32,25 @@
       }
 
       .countrydes{
-        width: 60%;
-        margin: auto;
         display: flex;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
-        gap: 2em;
       }
 
       .description-monaco{
-        width: 80%;
         border: black 1px solid;
         border-radius: 7px;
         margin: auto;
-        padding: 1em;
+        padding: 2em;
         font-style: italic;
         font-size: 25px;
         font-family: 'Syne', sans-serif;
         text-align: left;
       }
-      
+
       .flag{
-        width: 45%; 
+        width: 470px; 
         height: 270px; 
         object-fit: cover; 
         border-radius: 7px;
@@ -140,7 +137,7 @@
 
     <div class="countrydes">
       <p class="description-monaco">
-        Monaco est une destination prestigieuse sur la Côte d’Azur, connue pour son luxe, son climat ensoleillé et ses paysages entre mer et montagne. Entre ses hôtels luxieux, ses restaurants délicieux et ses événements prestigieux, Monaco offre une expérience unique d'élégance. Cliquez sur les images ci-dessous pour savoir d'avantage sur les sites à visiter et les mets populaires.
+        Monaco est une destination prestigieuse sur la Côte  <br />d’Azur, connue pour son luxe, son climat ensoleillé et<br/> ses paysages entre mer et montagne. Entre ses hôtels  <br />luxieux, ses restaurants délicieux et ses événements <br/> prestigieux, Monaco offre une expérience unique <br />d'élégance. Cliquez sur les images ci-dessous pour savoir<br /> d'avantage sur les sites à visiter et les mets populaires.
       </p>
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Flag_of_Monaco.svg/800px-Flag_of_Monaco.svg.png" class="flag" alt="Monaco">
     </div>
@@ -151,19 +148,37 @@
       <table class="sites">
         <tr><th colspan="3"><h3>Les sites à visiter</h3></th></tr>
         <tr>
-            <td><img src="images/palais princier.jfif" alt="Le Palais Princier"><br>Le Palais Princier</td>
-            <td><img src="images/oceanmusee.jfif" alt="Le Musée Océanographique"><br>Le Musée Océanographique</td>
-            <td><img src="images/casinomonte.jfif" alt="Le Casino de Monte-Carlo"><br>Le Casino de Monte-Carlo</td>
+            <td>
+              <a href="https://fr.tripadvisor.ca/Attraction_Review-g190408-d195270-Reviews-Prince_s_Palace_of_Monaco-Monaco_Ville.html" target="_blank"><img src="palais princier.jfif" alt="Le Palais Princier"></a><br>Le Palais Princier
+            </td>
+            <td>
+              <a href="https://fr.tripadvisor.ca/Attraction_Review-g190409-d195271-Reviews-Oceanographic_Museum_of_Monaco-Monte_Carlo.html" target="_blank"><img src="oceanmusee.jfif" alt="Le Musée Océanographique"></a><br>Le Musée Océanographique
+            </td>
+            <td>
+              <a href="https://fr.tripadvisor.ca/Attraction_Review-g190409-d195263-Reviews-Casino_De_Monte_carlo-Monte_Carlo.html" target="_blank"><img src="casinomonte.jfif" alt="Le Casino de Monte-Carlo"></a><br>Le Casino de Monte-Carlo
+            </td>
         </tr>
         <tr>
-            <td><img src="images/porthercule.jfif" alt="Port Hercule"><br>Port Hercule</td>
-            <td><img src="images/grandprix.jfif" alt="Monaco Grand Prix"><br>Monaco Grand Prix</td>
-            <td><img src="images/larvatto.jfif" alt="Larvatto Beach"><br>Plage Larvatto</td>
+            <td>
+              <a href="https://fr.tripadvisor.ca/Attraction_Review-g190409-d2311217-Reviews-Port_Hercule_De_Monaco-Monte_Carlo.html" target="_blank"><img src="porthercule.jfif" alt="Port Hercule"></a><br>Port Hercule
+            </td>
+            <td>
+              <a href="https://fr.tripadvisor.ca/Attraction_Review-g190409-d10477080-Reviews-Monaco_Grand_Prix-Monte_Carlo.html" target="_blank"><img src="grandprix.jfif" alt="Monaco Grand Prix"></a><br>Monaco Grand Prix
+            </td>
+            <td>
+              <a href="https://fr.tripadvisor.ca/Attraction_Review-g190409-d258093-Reviews-Larvotto_Beach-Monte_Carlo.html" target="_blank"><img src="larvatto.jfif" alt="Larvatto Beach"></a><br>Plage Larvatto
+            </td>
         </tr>
         <tr>
-            <td><img src="images/jardinjapon.jfif" alt="Jardin Japonais"><br>Jardin Japonais</td>
-            <td><img src="images/opera.jfif" alt="Opera de Monte-Carlo"><br>Opera de Monte-Carlo</td>
-            <td><img src="images/casionsquare.jfif" alt="Casino Square"><br>Casino Square</td>
+            <td>
+              <a href="https://fr.tripadvisor.ca/Attraction_Review-g190409-d3319270-Reviews-Japanese_Garden-Monte_Carlo.html" target="_blank"><img src="jardinjapon.jfif" alt="Jardin Japonais"></a><br>Jardin Japonais
+            </td>
+            <td>
+              <a href="https://fr.tripadvisor.ca/Attraction_Review-g190409-d607683-Reviews-Opera_de_Monte_Carlo-Monte_Carlo.html" target="_blank"><img src="opera.jfif" alt="Opera de Monte-Carlo"></a><br>Opera de Monte-Carlo
+            </td>
+            <td>
+              <a href="https://fr.tripadvisor.ca/Attraction_Review-g190409-d2385491-Reviews-Casino_Square-Monte_Carlo.html" target="_blank"><img src="casionsquare.jfif" alt="Casino Square"></a><br>Casino Square
+            </td>
         </tr>
       </table>
     </div>
@@ -174,19 +189,37 @@
       <table class="food">
         <tr><th colspan="3"><h3>Les mets populaire</h3></th></tr>
         <tr>
-            <td><img src="images/barbi.jfif" alt="Barbagiuan"><br>Barbagiuan</td>
-            <td><img src="images/stocafi.jfif" alt="Stocafi"><br>Stocafi</td>
-            <td><img src="images/pissaladiere.jfif" alt="Pissaladière"><br>Pissaladière</td>
+            <td>
+              <a href="https://fr.wikipedia.org/wiki/Barbajuan" target="_blank"><img src="barbi.jfif" alt="Barbagiuan"></a><br>Barbagiuan
+            </td>
+            <td>
+              <a href="https://www.gastronomiac.com/lexique_culinaire/stocafi-cuisine-monegasque/" target="_blank"><img src="stocafi.jfif" alt="Stocafi"></a><br>Stocafi
+            </td>
+            <td>
+              <a href="https://fr.wikipedia.org/wiki/Pissaladi%C3%A8re" target="_blank"><img src="pissaladiere.jfif" alt="Pissaladière"></a><br>Pissaladière
+            </td>
         </tr>      
         <tr>
-            <td><img src="images/socca.jfif" alt="La Socca"><br>La Socca</td>
-            <td><img src="images/pan.jfif" alt="Le Pan Bagnat"><br>Le Pan Bagnat</td>
-            <td><img src="images/bouilla.jfif" alt="Bouillabaisse"><br>Bouillabaisse</td>
+            <td>
+              <a href="https://montecarloliving.com/fr/actualite/que-gouter-monaco-socca-5036/" target="_blank"><img src="socca.jfif" alt="La Socca"></a><br>La Socca
+            </td>
+            <td>
+              <a href="https://fr.wikipedia.org/wiki/Pan_bagnat" target="_blank"><img src="pan.jfif" alt="Le Pan Bagnat"></a><br>Le Pan Bagnat
+            </td>
+            <td>
+              <a href="https://fr.wikipedia.org/wiki/Bouillabaisse" target="_blank"><img src="bouilla.jfif" alt="Bouillabaisse"></a><br>Bouillabaisse
+            </td>
         </tr>
         <tr>
-            <td><img src="images/salad.jfif" alt="Salade Niçoise"><br>Salade Niçoise</td>
-            <td><img src="images/tarte.jfif" alt="Tarte Tropezienne"><br>Tarte Tropezienne</td>
-            <td><img src="images/pissalat.jfif" alt="La Pissalat"><br>La Pissalat</td>
+            <td>
+              <a href="https://lesoeufs.ca/recettes/salade-nicoise/" target="_blank"><img src="salad.jfif" alt="Salade Niçoise"></a><br>Salade Niçoise
+            </td>
+            <td>
+              <a href="https://www.latartetropezienne.fr/en/" target="_blank"><img src="tarte.jfif" alt="Tarte Tropezienne"></a><br>Tarte Tropezienne
+            </td>
+            <td>
+              <a href="https://fr.wikipedia.org/wiki/Pissalat" target="_blank"><img src="pissalat.jfif" alt="La Pissalat"></a><br>La Pissalat
+            </td>
         </tr>
       </table>
     </div>
