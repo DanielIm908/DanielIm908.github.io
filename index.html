@@ -40,84 +40,6 @@
             width: 100%;
         }
 
-        .quote {
-            font-family: 'Raleway', sans-serif;
-            text-align: center;
-            font-style: italic;
-            font-weight: bold;
-            font-size: 200px;
-            width: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-shadow: 4px 4px 6px;
-            /*Animation où quand le pointeur du souris touche l'élément, ça à l'effet que cet élément s'agrandit. Tu peux ajusté le temps pour prolonger ou raccourci le temps que ça prends pour que l'élément s'agrandit et retourne vers son grandeur originale.*/
-            transition: 0.5s ease; 
-        }
-
-        .quote:hover {
-            /*Tu peux ajusté cet valeur pour ajusté la taille que l'élément vas s'agrandir.*/
-            transform: scale(1.06); 
-        }
-
-        /*Conteneur pour la citation et la flèche.*/
-        .quote-container {
-            margin: auto; 
-            display: flex; 
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 70%;
-            width: 40%;
-            position: relative;
-        }
-
-        /*Animation où les flèches peuvent rebondir en haut et en bas. Source:https://www.tutorialspoint.com/css/css_animation_bounce.htm*/
-        @keyframes bounce { 
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-
-        /*Utilisé un site pour crée mes flèches parfaitement. Source:https://webspe.net/tools/en/arrow/*/
-        .arrow { 
-            margin: auto;
-            position: relative;
-            display: inline-block;
-            width: 57.9px;
-            height: 24.7px;
-            bottom: 40px;
-            /*Permet à rebondir infiniment.*/
-            animation: bounce 3s infinite; 
-        }
-
-        .arrow::before,
-        .arrow::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: calc(50% - 2.5px);
-            width: 5px;
-            height: 38px;
-            border-radius: 9999px;
-            background-color: #000000;
-            transform-origin: 50% calc(100% - 2.5px);
-        }
-
-        .arrow::before {
-            transform: rotate(52.5deg);
-        }
-
-        .arrow::after {
-            transform: rotate(-52.5deg);
-        }
-
         .text-container {
             height: 30%;
             display: flex;
@@ -247,37 +169,6 @@
             display: flex; 
             justify-content: space-evenly;
             align-items: baseline;
-        }
-
-        .arrowup { 
-            /*Flèche qui permet de retourner en haut de la page. Source:https://webspe.net/tools/en/arrow/*/
-            position: relative;
-            display: block;
-            width: 57.4px;
-            height: 25.1px;
-            margin: 5px auto 50px auto;
-            animation: bounce 3s infinite;
-        }
-
-        .arrowup::before,
-        .arrowup::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: calc(50% - 2.5px);
-            width: 5px;
-            height: 38px;
-            border-radius: 9999px;
-            background-color: #000000;
-            transform-origin: 50% 2.5px;
-        }
-
-        .arrowup::before {
-            transform: rotate(52.5deg);
-        }
-
-        .arrowup::after {
-            transform: rotate(-52.5deg);
         }
     </style>
     <title>Daniel Im | Portfolio Web</title>
