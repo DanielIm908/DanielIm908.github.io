@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    <form>
+        <h1>Calculatrice</h1>
+        <label for="txtNum1">Nombre 1: </label>
+        <input type="text" id="txtNum1">
+        <br><br>
+        <label for="txtNum2">Nombre 2: </label>
+        <input type="text" id="txtNum2">
+        <br><br>
+          
+        <input type="button" id="btnCalculAd" onclick="calculAd()" value="Effectuer un calcul d'addition"><br><br>
+        <input type="button" id="btnCalculSo" onclick="calculSo()" value="Effectuer un calcul de soustraction"><br><br>
+        <input type="button" id="btnCalculMu" onclick="calculMu()" value="Effectuer un calcul de multiplication"><br><br>
+        <input type="button" id="btnCalculDi" onclick="calculDi()" value="Effectuer un calcul de division"><br><br>
+        <input type="button" id="btnCalculMo" onclick="calculMo()" value="Effectuer un calcul modulo"><br><br>
+        <input type="button" id="btnCalculEx" onclick="calculEx()" value="Effectuer un calcul d'exposant"><br><br>
+          
+        <div id="divAffiche"></div>
+
+    <script>
+       function calculMo() {
+            var num1 = document.getElementById("txtNum1").value;
+            var num2 = document.getElementById("txtNum2").value;
+            let ans = num1%num2
+            var message = "<br><br>" + num1 + " % " + num2 + " = " + ans;
+            document.getElementById("divAffiche").innerHTML = message;
+        }
+    </script>
+    
+    <script>
+       function calculAd() {
+            var num1 = document.getElementById("txtNum1").value;
+            var num2 = document.getElementById("txtNum2").value;
+            let ans = parseInt(num1) + parseInt(num2)
+            var message = "<br><br>" + num1 + " + " + num2 + " = " + ans;
+            document.getElementById("divAffiche").innerHTML = message;
+        }
+    </script>
+    <script>
+       function calculSo() {
+            var num1 = document.getElementById("txtNum1").value;
+            var num2 = document.getElementById("txtNum2").value;
+            let ans = parseInt(num1) - parseInt(num2)
+            var message = "<br><br>" + num1 + " - " + num2 + " = " + ans;
+            document.getElementById("divAffiche").innerHTML = message;
+        }
+    </script>
+    <script>
+       function calculMu() {
+            var num1 = document.getElementById("txtNum1").value;
+            var num2 = document.getElementById("txtNum2").value;
+            let ans = parseInt(num1) * parseInt(num2)
+            var message = "<br><br>" + num1 + " * " + num2 + " = " + ans;
+            document.getElementById("divAffiche").innerHTML = message;
+        }
+    </script>
+    <script>
+       function calculDi() {
+            var num1 = document.getElementById("txtNum1").value;
+            var num2 = document.getElementById("txtNum2").value;
+            let ans = parseInt(num1) / parseInt(num2)
+            var message = "<br><br>" + num1 + " / " + num2 + " = " + ans;
+            document.getElementById("divAffiche").innerHTML = message;
+        }
+    </script>
+    <script>
+       function calculEx() {
+            var num1 = document.getElementById("txtNum1").value;
+            var num2 = document.getElementById("txtNum2").value;
+            let ans = parseInt(num1) ** parseInt(num2)
+            var message = "<br><br>" + num1 + " ^ " + num2 + " = " + ans;
+            document.getElementById("divAffiche").innerHTML = message;
+        }
+    </script>
+    </form>
+</body>
+
+</html>
