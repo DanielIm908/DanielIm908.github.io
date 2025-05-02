@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FORMULAIRE AFFICHEUR DE NOM</title>
+</head>
+
+<body>
+    <form>
+        <h1>Formulaire Afficheur de Nom</h1>
+        <label for="txtPre">Prénom: </label>
+        <input type="text" id="txtPre">
+        <br><br>
+        <label for="txtMil">Nom de milieu: </label>
+        <input type="text" id="txtMil">
+        <br><br>
+        <label for="txtFam">Nom de famille: </label>
+        <input type="text" id="txtFam">
+        <br><br>
+          
+        <input type="button" id="btnInitials" onclick="initials()" value="Afficher vos Initiales"><br><br>
+        <input type="button" id="btnFullName" onclick="fullName()" value="Afficher votre nom au complet"><br><br>
+        <input type="button" id="btnUserName" onclick="userName()" value="Afficher votre nom d'utilisateur"><br><br>
+          
+        <div id="divAffiche"></div>
+
+    <script>
+        function initials() {
+            let a = document.getElementById("txtPre").value.charAt(0)
+            let b = document.getElementById("txtMil").value.charAt(0)
+            let c = document.getElementById("txtFam").value.charAt(0)
+            let ini = a + "." + b + "." + c + "."
+            var message = "<br><br>" + ini;
+            document.getElementById("divAffiche").innerHTML = message;
+        }
+        
+        function fullName() {
+            let a = document.getElementById("txtPre").value
+            let b = document.getElementById("txtMil").value
+            let c = document.getElementById("txtFam").value
+            var message = "<br><br>" + a + " " + b + " " + c;
+            document.getElementById("divAffiche").innerHTML = message;
+        }
+        
+        function userName() {
+            let a = document.getElementById("txtPre").value.charAt(0)
+            let b = document.getElementById("txtMil").value.charAt(0)
+            let c = document.getElementById("txtFam").value
+            var username = a+b+c
+            var message = "<br><br>" + username;
+            document.getElementById("divAffiche").innerHTML = message;
+        }
+    </script>
+    </form>
+</body>
+
+</html>
